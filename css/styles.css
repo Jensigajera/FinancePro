@@ -1,0 +1,247 @@
+/* Reset and Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #007aff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the navbar stays above other content */
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Navbar for Mobile View */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background: linear-gradient(135deg, #007aff, #00b7ff);
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #007aff;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Sections */
+.container {
+    max-width: 900px;
+    margin: 20px;
+}
+
+.section {
+    margin: 40px 0;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.section-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.text-content {
+    flex: 2;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Buttons and Links */
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #005bb5;
+}
+
+/* Hero Section for Calculators Page */
+.calculators-hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background: linear-gradient(135deg, #3b5998, #8b9dc3);
+}
+
+/* Calculator Section Styling */
+.calculator-section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.result {
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* Hero Section for Consultation Page */
+.consultation-hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
+}
+
+/* Consultation Form Styling */
+.consultation-form {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.consultation-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.consultation-form button {
+    padding: 12px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.consultation-form button:hover {
+    background-color: #005bb5;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
+    .section-image, .text-content {
+        max-width: 100%;
+    }
+}
